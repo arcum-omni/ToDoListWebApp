@@ -1,4 +1,4 @@
-## CPW203-Fall2019-StudentReg
+## CPW203-Fall2019-ToDoList
 
 ## About:
 A simple online to do list application to track tasks.
