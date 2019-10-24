@@ -1,13 +1,12 @@
 body{
-    /*width: 800px;
+    width: 800px;
     margin: auto;
-    */
-    
+        
     /* How to set a background gradient
        https://uigradients.com/#Snapchat  */
     /*background: #757f9a; /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to right, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-color: lightgray;
 }
 
@@ -35,11 +34,13 @@ div#completed{
     width: 49%;
     float: right;
     background-color: darkgray;
+    text-decoration: line-through;
 }
 
 /* media query */
 @media only screen and (max-width: 600px){
     body{
+        background: 0px;
         background-color: darkgrey;
     }
 
@@ -55,6 +56,7 @@ div#completed{
     div#completed{
         margin-top: 15px;
         background-color: lightgrey;
+        
     }
 
     #copyright{
