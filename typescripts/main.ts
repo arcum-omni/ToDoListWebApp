@@ -14,16 +14,13 @@ class ToDoItem{
 }
 
 
-
 let myItem = new ToDoItem("Finish Class");
-
 
 
 window.onload = function(){
     let addBtn = <HTMLElement>document.querySelector("form > input[type=button]");
     addBtn.onclick = main;
 };
-
 
 
 function main(){
@@ -37,7 +34,6 @@ function main(){
 }
 
 
-
 /**
  * Move selected task to completed section of the page
  */
@@ -48,7 +44,6 @@ function markAsComplete(){
 
     completedItems.appendChild(currItem);
 }
-
 
 
 /**
@@ -66,7 +61,6 @@ function displayToDoItem(item:ToDoItem):void{
     let displayDiv = document.getElementById("todo");
     displayDiv.appendChild(div);
 }
-
 
 
 /**
