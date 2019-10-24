@@ -7,6 +7,7 @@
     <meta name="Description" content="A simple free online to do list application to track tasks. No registration is required.">
     <link rel="shortcut icon" href="images/hut8_wireframe.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <title>Hut8 Free Online ToDo List</title>
 </head>
 <body>
@@ -43,5 +44,9 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({ field: document.getElementById('deadline') });
+    </script>
 </body>
 </html>
