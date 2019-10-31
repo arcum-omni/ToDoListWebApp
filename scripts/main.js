@@ -8,11 +8,24 @@ var ToDoItem = /** @class */ (function () {
     }
     return ToDoItem;
 }());
-var myItem = new ToDoItem("Finish Class");
+/* Write Test Code */
+var myItem = new ToDoItem("Learn about cookies !@#$%=;");
+myItem.isComplete = false;
+// October 29th, 2019: Months starts at 0
+myItem.deadline = new Date(2019, 9, 29);
+// stringify converts any object into a JavaScrip Object Notation (JSON) string format
+var strData = JSON.stringify(myItem);
+console.log(strData);
+// Setting cookie called 'toDoItems' that expires 90 days
+Cookies.set("toDoItems", strData, { expires: 90 });
+/* End Test Code */
 window.onload = function () {
     var addBtn = document.querySelector("form > input[type=button]");
     addBtn.onclick = main;
 };
+/**
+ *
+ */
 function main() {
     // get todo item from user
     var item = getItem();

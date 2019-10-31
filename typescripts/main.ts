@@ -14,7 +14,21 @@ class ToDoItem{
 }
 
 
-let myItem = new ToDoItem("Finish Class");
+/* Write Test Code */
+
+let myItem = new ToDoItem("Learn about cookies !@#$%=;");
+myItem.isComplete = false;
+// October 29th, 2019: Months starts at 0
+myItem.deadline = new Date(2019, 9, 29);
+
+// stringify converts any object into a JavaScrip Object Notation (JSON) string format
+let strData = JSON.stringify(myItem);
+console.log(strData);
+
+// Setting cookie called 'toDoItems' that expires 90 days
+Cookies.set("toDoItems", strData, {expires: 90});
+
+/* End Test Code */
 
 
 window.onload = function(){
@@ -23,6 +37,9 @@ window.onload = function(){
 };
 
 
+/**
+ * 
+ */
 function main(){
     // get todo item from user
     let item:ToDoItem = getItem();
