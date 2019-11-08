@@ -11,10 +11,7 @@
     <title>Hut8 Free Online ToDo List</title>
 </head>
 <body>
-    <h1>Hut8 To Do List Work in Progress</h1>
-    <!--
-        Notes, We will use a thrid party date-time picker
-    -->
+    <h1>Hut8 ToDo List</h1>
 
     <form>
         <input type="text" placeholder="title" name="title" id="title">
@@ -24,6 +21,7 @@
         <input type="checkbox"> IsComplete?
         <br>
         <input type="button" value="Add ToDo">
+        <br><br>
     </form>
 
     <div id="todo"></div>
@@ -31,7 +29,7 @@
     <div id="completed"></div>
 
     <footer>
-        <p id="copyright">
+        <br><p id="copyright">
             Visit us on Facebook at <a href="https://www.facebook.com/hut8.dev/">@hut8dev</a><br>
             Email us at <a href="mailto:hut8dev@gmail.com">hut8dev@gmail.com</a><br>
             <br>
@@ -45,5 +43,6 @@
     <script>
         var picker = new Pikaday({ field: document.getElementById('deadline') });
     </script>
+    
 </body>
 </html>
